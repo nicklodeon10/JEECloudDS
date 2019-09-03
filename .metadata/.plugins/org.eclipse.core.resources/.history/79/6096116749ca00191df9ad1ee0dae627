@@ -1,0 +1,30 @@
+package com.cg.democollection.service;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class WildCardCheck {
+
+	public static void main(String[] args) {
+		
+		List<Integer> l1= Arrays.asList(1,2,3,4);
+		List<Double> l2=Arrays.asList(1.1,2.2,3.3,4.4);
+		//Bounded Wilcard
+		System.out.println(getIndexZeroBounded(l1));
+		System.out.println(getIndexZeroBounded(l2));
+		
+		//Unbounded Wildcard
+		System.out.println(getIndexZeroUnbounded(l1));
+	}
+	
+	//Bounded Wildcard
+	public static double getIndexZeroBounded(List<? extends Number> list) {
+		return list.get(0).doubleValue();
+	}
+	
+	//Unbounded Wildcard
+	public static String getIndexZeroUnbounded(List<?> list) {
+		return (""+list.get(0));
+	} 
+
+}

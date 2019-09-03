@@ -1,0 +1,23 @@
+package com.cg.junitlearn;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MathUtilsTest {
+
+	@Test
+	void testAdd() {
+		MathUtils mathutils=new MathUtils();
+		int expected=2;
+		int actual=mathutils.add(1, 1);
+		assertEquals(expected, actual, "Add method should add two numbers.");
+	}
+
+	@Test
+	void testDivide() {
+		MathUtils mathutils=new MathUtils();
+		assertThrows(ArithmeticException.class, () -> mathutils.divide(1, 0), "Divide by zero should throw.");
+	}
+	
+}

@@ -1,0 +1,5 @@
+package com.cg.democollection.dao;
+
+public interface EmployeeDAO {
+
+}

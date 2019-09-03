@@ -1,0 +1,5 @@
+package com.cg.democollection.service;
+
+public interface EmployeeService {
+
+}

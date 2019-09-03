@@ -1,0 +1,9 @@
+package com.cg.corejava.flowandexception;
+
+public class WrongAgeException extends Exception{
+
+	public WrongAgeException(String s){
+		super(s);
+	}
+	
+}

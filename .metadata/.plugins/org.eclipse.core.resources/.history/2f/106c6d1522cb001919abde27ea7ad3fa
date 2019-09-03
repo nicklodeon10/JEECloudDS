@@ -1,0 +1,16 @@
+package com.cg.corejava.flowandexception;
+
+public class Exercise3 {
+
+	public void printPrimes(int n) {
+		for(int i=1; i<=n; i++) {
+			if(isPrime(i))
+				System.out.println(i);
+		}
+	}
+	
+	public boolean isPrime(int n) {
+		
+	}
+	
+}

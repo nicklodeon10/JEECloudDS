@@ -1,0 +1,36 @@
+package com.cg.democollection.ui;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.cg.democollection.dto.Employee;
+
+public class MyApplication {
+
+	public static void main(String[] args) {
+		
+		List<Employee<Integer, Double>> myList=new LinkedList<Employee<Integer, Double>>();
+		Scanner scn=new Scanner(System.in);
+		int choice=1;
+		do {
+			System.out.println("Enter your choice:\n 1 for Add\n2 for Show\n3 to Exit.");
+			choice=scn.nextInt();
+			switch(choice) {
+			case 1:
+				System.out.println("Enter Employee Name:");
+				String name=scn.nextLine();
+				System.out.println("Enter Employee Id: ");
+				Integer id=scn.nextInt();
+				System.out.println("Enter Employee Salary: ");
+				Double sal=scn.nextDouble();
+				Employee<Integer, Double> emp=new Employee<Integer, Double>(id, name, sal);
+				myList.add(emp);
+				break;
+			}
+		}while(choice!=2);
+		scn.close();
+	}
+
+}
+ 

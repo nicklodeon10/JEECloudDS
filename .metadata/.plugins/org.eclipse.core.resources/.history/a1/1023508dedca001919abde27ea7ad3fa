@@ -1,0 +1,11 @@
+package com.cg.corejava.arrays;
+
+import java.util.Arrays;
+
+public class Exercise1 {
+	
+	public int getSecondSmallest(int[] ar) {
+		ar[]=Arrays.parallelSort(ar[]);
+	}
+	
+}

@@ -1,0 +1,7 @@
+package com.cg.employeemanagement.service;
+
+public interface ProjectService {
+	
+	public Project addProject(Project proj);
+	
+}

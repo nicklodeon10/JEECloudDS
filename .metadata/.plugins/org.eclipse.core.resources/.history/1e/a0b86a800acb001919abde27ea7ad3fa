@@ -1,0 +1,7 @@
+package com.cg.democollection.service;
+
+public interface EmployeeService {
+	
+	public Employee<Integer, Double> addEmployee(Employee<Integer, Double> emp);
+	
+}

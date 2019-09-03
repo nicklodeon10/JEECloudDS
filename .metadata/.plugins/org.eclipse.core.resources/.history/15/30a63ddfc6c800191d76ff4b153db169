@@ -1,0 +1,23 @@
+package com.cg.employeemanagement.dao;
+
+import com.cg.employeemanagement.dto.Employee;
+
+public class EmployeeDAOImpl implements EmployeeDAO{
+	
+	final int ARRAYLIMIT=5;
+	
+	Employee[] emp=new Employee[ARRAYLIMIT];
+	private int top=-1;
+	
+	public Employee addEmployee(Employee emp) {
+		// TODO Auto-generated method stub
+		this.
+		return emp;
+	}
+
+	public Employee[] showEmployee() {
+		// TODO Auto-generated method stub
+		return this.emp;
+	}
+	
+}

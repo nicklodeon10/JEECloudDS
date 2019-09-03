@@ -1,0 +1,23 @@
+package com.cg.democollection.ui;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.cg.democollection.dto.Employee;
+
+public class MyApplication {
+
+	public static void main(String[] args) {
+		
+		List<Employee<Integer, Double>> myList=new LinkedList<Employee<Integer, Double>>();
+		Scanner scn=new Scanner(System.in);
+		int choice=1;
+		do {
+			System.out.println("Enter your choice:\n 1 for Add\n2 for Show\n3 to Exit.");
+			choice=scn.nextInt();
+		}while()
+	}
+
+}
+ 

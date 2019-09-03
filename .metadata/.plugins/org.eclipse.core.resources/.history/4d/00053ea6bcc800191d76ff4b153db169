@@ -1,0 +1,10 @@
+package com.cg.employeemanagement.dto;
+
+public class Project {
+	
+	private Long projId;
+	private String projName;
+	private Employee[] emplList;
+	private Float projCost;
+	
+}

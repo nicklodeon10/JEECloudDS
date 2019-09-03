@@ -1,0 +1,33 @@
+package com.cg.corejava.flowandexception;
+
+public class Exercise2 {
+
+	public int getNthFibonacciNonRec(int n) {
+		int out;
+		if(n==1) 
+			out=1;
+		else if(n==2) 
+			out=1;
+		else {
+			int a=1;
+			out+=" ";
+			int b=1;
+			out+=" ";
+			int count=3;
+			while(count<=n) {
+				c=a+b;
+				out=out+c+" ";
+				count++;
+				a=b;
+				b=c;
+			}
+		}return c;
+	}
+	
+	public int getNthFibonacciRec(int n) {
+	    if (n <= 1) 
+	        return n; 
+	     return getNthFibonacciRec(n-1) + getNthFibonacciRec(n-2);
+	}
+	
+}

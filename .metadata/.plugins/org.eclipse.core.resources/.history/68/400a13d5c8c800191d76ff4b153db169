@@ -1,0 +1,19 @@
+package com.cg.employeemanagement.service;
+
+import com.cg.employeemanagement.dao.EmployeeDAO;
+import com.cg.employeemanagement.dao.EmployeeDAOImpl;
+import com.cg.employeemanagement.dto.Employee;
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+	EmployeeDAO dao=new EmployeeDAOImpl();
+	
+	public Employee addEmployee(Employee emp) {
+		return dao.addEmployee(emp);
+	}
+
+	public Employee[] showEmployee() {
+		return dao.showEmployee()
+	}
+	
+}

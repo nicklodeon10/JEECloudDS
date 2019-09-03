@@ -1,0 +1,13 @@
+package com.cg.demojunit.service;
+
+public interface CalculatorService {
+
+	public double addNumber(double numOne, double numTwo);
+	
+	public double subNumber(double numOne, double numTwo);
+	
+	public double mulNumber(double numOne, double numTwo);
+	
+	public double divNumber(double numOne, double numTwo);
+	
+}

@@ -1,0 +1,16 @@
+package com.cg.democollection.service;
+
+import java.util.Comparator;
+
+import com.cg.democollection.dto.Employee;
+
+public class EmpIdCompare implements Comparator<Employee<Integer, Double>>{
+
+	public int compare(Employee<Integer, Double> o1, Employee<Integer, Double> o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+}

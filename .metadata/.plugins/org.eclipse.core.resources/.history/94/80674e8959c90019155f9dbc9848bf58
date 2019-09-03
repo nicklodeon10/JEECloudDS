@@ -1,0 +1,7 @@
+package com.cg.employeemanagement.dao;
+
+public interface ProjectDAO {
+
+	public Project addProject(Project proj);
+	
+}

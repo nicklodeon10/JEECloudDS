@@ -1,0 +1,5 @@
+package com.cg.employeemanagement.service;
+
+public class EmployeeServiceImpl {
+
+}

@@ -1,0 +1,14 @@
+import org.junit.Before;
+
+import com.cg.demojunit.service.CalculatorService;
+
+public class CalculatorTest {
+
+	CalculatorService service;
+	
+	@Before
+	public void beforeTest() {
+		service=new CalculatorServiceImpl();
+	}
+
+}

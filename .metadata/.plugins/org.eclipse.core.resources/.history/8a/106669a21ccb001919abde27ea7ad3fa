@@ -1,0 +1,10 @@
+package com.cg.corejava.flowandexception;
+
+public class Exercise1 {
+
+		public String getMessage() {
+			Scanner scanner=new Scanner(System.in);
+			
+		}
+	
+}

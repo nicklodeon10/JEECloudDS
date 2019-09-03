@@ -1,0 +1,41 @@
+package com.cg.employeemanagement.ui;
+
+import java.util.Scanner;
+
+public class MyApplication {
+
+	public static void main(String[] args) {
+		
+		Long projId=3213;
+		String projName="BestCloudProject"
+
+		/*
+		 * Scanner scn=new Scanner(System.in);
+		 * System.out.println("Enter the Employee Id: "); long id=scn.nextLong();
+		 * System.out.println("Enter the Employee Name: "); String name=scn.next();
+		 * System.out.println("Enter the Employee Salary: "); float sal=scn.nextFloat();
+		 * System.out.println("Enter the Department Id: "); long did=scn.nextLong();
+		 * System.out.println("Enter the Department Name: "); String dname=scn.next();
+		 * 
+		 * Department dep=new Department(); dep.setDeptId(did); dep.setDeptName(dname);
+		 * 
+		 * Employee emp=new Employee(); emp.setEmpName(name); emp.setEmpId(id);
+		 * emp.setEmpSalary(sal); emp.setEmpDept(dep);
+		 * 
+		 * EmployeeService service=new EmployeeServiceImpl(); service.addEmployee(emp);
+		 * System.out.println(service.searchEmployee(id));
+		 * 
+		 * name="Bot"; sal=23232.2321f; System.out.println(service.updateEmployee(id,
+		 * dname, sal, dep));
+		 * 
+		 * Employee empArray[]=service.showEmployee();
+		 * 
+		 * for(int i=0; i<EmployeeDAOImpl.top; i++) {
+		 * System.out.println(empArray[i].getEmpName()); }
+		 * 
+		 * service.removeEmployee(id);
+		 * scn.close();
+		 */
+	}
+
+}

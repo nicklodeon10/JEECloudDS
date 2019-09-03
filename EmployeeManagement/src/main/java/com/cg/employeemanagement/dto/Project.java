@@ -1,0 +1,52 @@
+package com.cg.employeemanagement.dto;
+
+public class Project {
+	
+	private Long projId;
+	private String projName;
+	private Employee[] emplList;
+	private Float projCost;
+	
+	public Project(){		
+	}
+	
+	public Project(Long projId, String projName, Employee[] emplList, Float projCost) {
+		this.projId = projId;
+		this.projName = projName;
+		this.emplList = emplList;
+		this.projCost = projCost;
+	}
+
+	public Long getProjId() {
+		return projId;
+	}
+
+	public void setProjId(Long projId) {
+		this.projId = projId;
+	}
+
+	public String getProjName() {
+		return projName;
+	}
+
+	public void setProjName(String projName) {
+		this.projName = projName;
+	}
+
+	public Employee[] getEmplList() {
+		return emplList;
+	}
+
+	public void setEmplList(Employee[] emplList) {
+		this.emplList = emplList;
+	}
+
+	public Float getProjCost() {
+		return projCost;
+	}
+
+	public void setProjCost(Float projCost) {
+		this.projCost = projCost;
+	}
+	
+}

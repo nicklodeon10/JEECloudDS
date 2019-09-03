@@ -1,0 +1,11 @@
+package com.cg.democollection.service;
+
+import java.util.Comparator;
+
+import com.cg.democollection.dto.Employee;
+
+public class NameCompare implements Comparator<Employee<Integer, Double>> {
+	
+	
+	
+}

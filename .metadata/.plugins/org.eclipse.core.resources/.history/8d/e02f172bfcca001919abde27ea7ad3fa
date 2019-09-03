@@ -1,0 +1,9 @@
+package com.cg.corejava.arrays;
+
+public class Exercise4 {
+	
+	public void getCount(char[] ar) {
+		
+	}
+	
+}

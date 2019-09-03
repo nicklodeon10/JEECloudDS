@@ -1,0 +1,28 @@
+import static org.junit.Assert.assertEquals;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.cg.demojunit.service.CalculatorService;
+import com.cg.demojunit.service.CalculatorServiceImpl;
+
+public class CalculatorTest {
+
+	CalculatorService service;
+	
+	@Before
+	public void beforeTest() {
+		service=new CalculatorServiceImpl();
+	}
+	
+	@Test
+	public void myTest() {
+		assertEquals(expected, service.addNumber(10.0, 20.0));
+	}
+	
+	@After
+	public void afterTest() {
+		
+	}
+}

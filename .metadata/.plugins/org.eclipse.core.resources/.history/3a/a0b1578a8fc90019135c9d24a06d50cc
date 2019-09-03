@@ -1,0 +1,27 @@
+package com.cg.employeemanagement.service;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class EmployeeServiceTest {
+
+	EmployeeService emp;
+	
+	@BeforeEach
+	public void init() {
+		emp=new EmployeeServiceImpl();
+	}
+	
+	@Test
+	public void runTest() {
+		
+	}
+	
+	@AfterEach
+	public void close() {
+		emp=null;
+	}
+	
+
+}
