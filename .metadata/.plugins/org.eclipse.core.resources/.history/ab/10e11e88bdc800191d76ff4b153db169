@@ -1,7 +1,0 @@
-package com.cg.employeemanagement.service;
-
-public interface EmployeeService {
-
-	public Employee addEmployee(Employee emp);
-	
-}

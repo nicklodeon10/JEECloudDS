@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\JEECloudDS\DemoCollection"/>
 			<item value="D:\JavaPractice\Practice"/>
 			<item value="D:\JEECloudDS\DemoJunit"/>
 			<item value="D:\JEECloudDS\EmployeeManagement\src\main\java\com\cg\employeemanagement\ui\MyApplication.java"/>
@@ -52,6 +53,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.cg.demomap"/>
 			<item value="com.cg.democollection"/>
 			<item value="com.cg.junit5demo"/>
 			<item value="com.cg.demojunit"/>
@@ -62,6 +64,7 @@
 			<item value="Employee Management"/>
 		</list>
 		<list key="artifactId">
+			<item value="DemoMap"/>
 			<item value="DemoCollection"/>
 			<item value="JUnit5Demo"/>
 			<item value="DemoJunit"/>

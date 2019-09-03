@@ -33,4 +33,9 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.cg.corejava.flowandexception.Exercise1"/>
 <fullyQualifiedTypeName name="com.cg.corejava.flowandexception.Exercise2"/>
+<fullyQualifiedTypeName name="com.cg.corejava.flowandexception.Exercise3"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="com.cg.democollection.service.EmpIdCompare"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
 </qualifiedTypeNameHistroy>

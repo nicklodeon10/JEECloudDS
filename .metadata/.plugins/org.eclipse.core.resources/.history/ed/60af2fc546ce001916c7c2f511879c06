@@ -12,8 +12,8 @@ public class MyApplication {
 		Map<Integer, Employee<Integer, Double>> myMap=new HashMap<Integer, Employee<Integer, Double>>();
 		myMap.put(111, new Employee<Integer, Double>(111,"Devang",234.234));
 		myMap.put(333, new Employee<Integer, Double>(333,"Aditya",232.234));
-		myMap.put(444, new Employee<Integer, Double>(444,"Mayank",231.234));
-		myMap.put(444, new Employee<Integer, Double>(444,"Mayank",231.234));
+		myMap.put(444, new Employee<Integer, Double>(444,"Gautam",231.234));
+		myMap.put(444, new Employee<Integer, Double>(444,"Mayank1",231.234));
 		myMap.put(222, new Employee<Integer, Double>(222,"Gautam",233.234));
 		
 		Set<Map.Entry<Integer, Employee<Integer, Double>>> mySet=myMap.entrySet();
@@ -21,7 +21,6 @@ public class MyApplication {
 			System.out.print(entry.getKey()+" ");
 			System.out.println(entry.getValue());
 		}
-		
-		
 	}
+	
 }
