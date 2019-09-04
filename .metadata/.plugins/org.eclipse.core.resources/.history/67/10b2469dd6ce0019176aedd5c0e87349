@@ -1,0 +1,17 @@
+package com.cg.demomap.dao;
+
+import java.util.List;
+
+import com.cg.demomap.dto.Employee;
+
+public interface EmployeeDAO {
+
+	public Employee<Integer, Double> addEmployee(Employee<Integer, Double> emp);
+	
+	public List<Employee<Integer, Double>> showEmployee();
+	
+	public Employee<Integer, Double> searchEmployee(Integer empId);
+	
+	public void removeEmployee(Integer empId);
+	
+}

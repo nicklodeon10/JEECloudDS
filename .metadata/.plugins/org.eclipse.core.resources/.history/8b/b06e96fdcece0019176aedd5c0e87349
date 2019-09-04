@@ -1,0 +1,28 @@
+package com.cg.demomap.ui;
+
+import java.util.Scanner;
+
+public class MyApplication {
+
+	public static void main(String[] args) {
+
+		Scanner scn=new Scanner(System.in);
+		int choice=0;
+		do {
+			System.out.println("Enter your choice:\n1 to Add.\n2 to Show.\n3 to Exit.");
+			switch(choice) {
+				case 1:
+					System.out.println("Enter Employee ID: ");
+					Integer id=scn.nextInt();
+					System.out.println("Enter Employee Name: ");
+					String name=scn.next();
+					System.out.println("Enter Employee Salary: ");
+					Double sal=scn.nextDouble();
+					break;
+				case 2:
+					break;
+			}
+		}while(choice!=3);
+		scn.close();
+	}
+}

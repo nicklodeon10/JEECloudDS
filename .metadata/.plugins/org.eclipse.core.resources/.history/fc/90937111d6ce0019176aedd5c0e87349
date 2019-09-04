@@ -1,0 +1,34 @@
+package com.cg.demomap.service;
+
+import java.util.List;
+
+import com.cg.demomap.dao.EmployeeDAO;
+import com.cg.demomap.dao.EmployeeDAOImpl;
+import com.cg.demomap.dto.Employee;
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+	EmployeeDAO dao=new EmployeeDAOImpl();
+	
+	public Employee<Integer, Double> addEmployee(Employee<Integer, Double> emp) {
+		return dao.addEmployee(emp);
+	}
+
+	public List<Employee<Integer, Double>> showEmployee() {
+		return dao.showEmployee() ;
+	}
+
+	public List<Employee<Integer, Double>> sortEmployee() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Employee<Integer, Double> searchEmployee(Integer empId) {
+		return dao.searchEmployee(empId);
+	}
+
+	public void removeEmployee(Integer empId) {
+		dao.removeEmployee(empId);
+	}
+
+}

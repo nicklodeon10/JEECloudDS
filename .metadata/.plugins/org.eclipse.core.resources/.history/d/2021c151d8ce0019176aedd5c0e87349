@@ -1,0 +1,9 @@
+package com.cg.demomap.service;
+
+import java.util.Comparator;
+
+import com.cg.demomap.dto.Employee;
+
+public class IDCompare implements Comparator<Employee<Integer, Double>>{
+
+}

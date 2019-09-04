@@ -1,0 +1,11 @@
+package com.cg.demomap.exception;
+
+public class WrongChoiceException extends Exception{
+	
+	private static final long serialVersionUID = 2820112924258035547L;
+
+	public WrongChoiceException(String message) {
+		super(message);
+	}
+	
+}
