@@ -1,0 +1,5 @@
+package com.cg.demomap.dto;
+
+public class Project {
+
+}

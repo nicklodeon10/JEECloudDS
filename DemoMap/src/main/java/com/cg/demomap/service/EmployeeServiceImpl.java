@@ -9,6 +9,7 @@ import java.util.Set;
 
 import com.cg.demomap.dao.EmployeeDAO;
 import com.cg.demomap.dao.EmployeeDAOImpl;
+import com.cg.demomap.dto.Department;
 import com.cg.demomap.dto.Employee;
 import com.cg.demomap.exception.EmployeeException;
 
@@ -16,22 +17,22 @@ public class EmployeeServiceImpl implements EmployeeService{
 
 	EmployeeDAO dao=new EmployeeDAOImpl();
 	
-	public Employee<Integer, Double> addEmployee(Employee<Integer, Double> emp) {
+	public Employee<Integer, Double, Department<Integer>> addEmployee(Employee<Integer, Double, Department<Integer>> emp) {
 		return dao.addEmployee(emp);
 	}
 
-	public List<Employee<Integer, Double>> showEmployee() {
-		Map<Integer, Employee<Integer, Double>> myMap=dao.showEmployee();
-		List<Employee<Integer, Double>> myList=new ArrayList<Employee<Integer, Double>>();
-		Set<Map.Entry<Integer, Employee<Integer, Double>>> mySet=myMap.entrySet();
-		for(Map.Entry<Integer, Employee<Integer,Double>> e: mySet) {
+	public List<Employee<Integer, Double, Department<Integer>>> showEmployee() {
+		Map<Integer, Employee<Integer, Double, Department<Integer>>> myMap=dao.showEmployee();
+		List<Employee<Integer, Double, Department<Integer>>> myList=new ArrayList<Employee<Integer, Double, Department<Integer>>>();
+		Set<Map.Entry<Integer, Employee<Integer, Double, Department<Integer>>>> mySet=myMap.entrySet();
+		for(Map.Entry<Integer, Employee<Integer,Double, Department<Integer>>> e: mySet) {
 			myList.add(e.getValue());
 		}
 		return myList;
 	}
 
-	public List<Employee<Integer, Double>> sortEmployee(int sortType) throws EmployeeException {
-		List<Employee<Integer, Double>> myList=showEmployee();
+	public List<Employee<Integer, Double, Department<Integer>>> sortEmployee(int sortType) throws EmployeeException {
+		List<Employee<Integer, Double, Department<Integer>>> myList=showEmployee();
 		if(sortType==1) {
 			Collections.sort(myList, new IDCompare());
 		}else if(sortType==2) {
@@ -44,9 +45,9 @@ public class EmployeeServiceImpl implements EmployeeService{
 		return myList;
 	}
 
-	public Employee<Integer, Double> searchEmployee(Integer empId) {
-		List<Employee<Integer, Double>> myList=showEmployee();
-		for(Employee<Integer, Double> e: myList) {
+	public Employee<Integer, Double, Department<Integer>> searchEmployee(Integer empId) {
+		List<Employee<Integer, Double, Department<Integer>>> myList=showEmployee();
+		for(Employee<Integer, Double, Department<Integer>> e: myList) {
 			if(e.getEmpId().equals(empId))
 				return e;
 		}
@@ -57,22 +58,22 @@ public class EmployeeServiceImpl implements EmployeeService{
 		dao.removeEmployee(empId);
 	}
 
-	public static class IDCompare implements Comparator<Employee<Integer, Double>>{
-		public int compare(Employee<Integer, Double> o1, Employee<Integer, Double> o2) {
+	public static class IDCompare implements Comparator<Employee<Integer, Double, Department<Integer>>>{
+		public int compare(Employee<Integer, Double, Department<Integer>> o1, Employee<Integer, Double, Department<Integer>> o2) {
 			if(o1.getEmpId()>o2.getEmpId()) return 1;
 			else if(o1.getEmpId()<o2.getEmpId()) return -1;
 			return 0;
 		}
 	}
 	
-	public class NameCompare implements Comparator<Employee<Integer, Double>>{
-		public int compare(Employee<Integer, Double> o1, Employee<Integer, Double> o2) {
+	public class NameCompare implements Comparator<Employee<Integer, Double, Department<Integer>>>{
+		public int compare(Employee<Integer, Double, Department<Integer>> o1, Employee<Integer, Double, Department<Integer>> o2) {
 			return o1.getEmpName().compareTo(o2.getEmpName());
 		}
 	}
 
-	public class SalaryCompare implements Comparator<Employee<Integer, Double>>{
-		public int compare(Employee<Integer, Double> o1, Employee<Integer, Double> o2) {
+	public class SalaryCompare implements Comparator<Employee<Integer, Double, Department<Integer>>>{
+		public int compare(Employee<Integer, Double, Department<Integer>> o1, Employee<Integer, Double, Department<Integer>> o2) {
 			if(o1.getEmpSalary()>o2.getEmpSalary()) return 1;
 			else if(o1.getEmpSalary()<o2.getEmpSalary()) return -1;
 			return 0;

@@ -1,0 +1,12 @@
+package com.cg.demomap.dto;
+
+import java.util.Map;
+
+public class Project<T, K> {
+	
+	T id;
+	String name;
+	Map<Integer, Employee<Integer, Double>> empMap;
+	K cost;
+
+}

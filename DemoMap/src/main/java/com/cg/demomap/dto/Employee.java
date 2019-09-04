@@ -1,16 +1,26 @@
 package com.cg.demomap.dto;
 
-public class Employee<T, K> {
+public class Employee<T, K, D> {
 	T empId;
 	String empName;
 	K empSalary;
+	D empDept;
 	
 	public Employee() {}
 
-	public Employee(T empId, String empName, K empSalary) {
+	public Employee(T empId, String empName, K empSalary, D empDept) {
 		this.empId = empId;
 		this.empName = empName;
 		this.empSalary = empSalary;
+		this.empDept = empDept;
+	}
+
+	public D getEmpDept() {
+		return empDept;
+	}
+
+	public void setEmpDept(D empDept) {
+		this.empDept = empDept;
 	}
 
 	public T getEmpId() {
@@ -39,7 +49,8 @@ public class Employee<T, K> {
 
 	@Override
 	public String toString() {
-		return "Employee [empId=" + empId + ", empName=" + empName + ", empSalary=" + empSalary + "]";
+		return "Employee [empId=" + empId + ", empName=" + empName + ", empSalary=" + empSalary + ", empDept=" + empDept.toString()
+				+ "]";
 	}
 
 }
