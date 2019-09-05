@@ -46,9 +46,14 @@ public class Project<T, K> {
 	public K getCost() {
 		return cost;
 	}
-	
+
 	public void setCost(K cost) {
 		this.cost = cost;
+	}
+	
+	@Override
+	public String toString() {
+		return "Project [id=" + id + ", name=" + name + ", empMap=" + empMap + ", cost=" + cost + "]";
 	}
 	
 }

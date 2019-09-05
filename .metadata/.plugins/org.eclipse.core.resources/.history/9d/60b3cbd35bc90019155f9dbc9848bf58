@@ -1,9 +1,0 @@
-package com.cg.employeemanagement.service;
-
-import com.cg.employeemanagement.dto.Employee;
-import com.cg.employeemanagement.dto.Project;
-
-public class ProjectServiceImpl implements ProjectService{
-
-
-}

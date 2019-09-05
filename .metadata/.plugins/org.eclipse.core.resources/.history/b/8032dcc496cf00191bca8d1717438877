@@ -1,0 +1,28 @@
+package com.cg.demomap.service;
+
+import java.util.Map;
+
+import com.cg.demomap.dao.ProjectDao;
+import com.cg.demomap.dao.ProjectDaoImpl;
+import com.cg.demomap.dto.Department;
+import com.cg.demomap.dto.Project;
+
+public class ProjectServiceImpl implements ProjectService{
+	
+	ProjectDao dao=new ProjectDaoImpl();
+
+	public Project<Integer, Double> addProject(Project<Integer, Double> proj) {
+		return dao.addProject(proj);
+	}
+
+	public Map<Integer, Project<Integer, Double>> showProjects() {
+		Map<Integer, Project<Integer, Double>> myMap=dao.showProjects();
+		return null;
+	}
+
+	public Project<Integer, Double> removeProject(Integer projId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

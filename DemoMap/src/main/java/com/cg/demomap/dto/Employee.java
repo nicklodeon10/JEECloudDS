@@ -5,14 +5,24 @@ public class Employee<T, K, D> {
 	String empName;
 	K empSalary;
 	D empDept;
+	T projId;
 	
 	public Employee() {}
 
-	public Employee(T empId, String empName, K empSalary, D empDept) {
+	public Employee(T empId, String empName, K empSalary, D empDept, T projId) {
 		this.empId = empId;
 		this.empName = empName;
 		this.empSalary = empSalary;
 		this.empDept = empDept;
+		this.projId=projId;
+	}
+
+	public T getProjId() {
+		return projId;
+	}
+
+	public void setProjId(T projId) {
+		this.projId = projId;
 	}
 
 	public D getEmpDept() {
@@ -50,7 +60,7 @@ public class Employee<T, K, D> {
 	@Override
 	public String toString() {
 		return "Employee [empId=" + empId + ", empName=" + empName + ", empSalary=" + empSalary + ", empDept=" + empDept.toString()
-				+ "]";
+				+ ", projId=" + projId + "]";
 	}
 
 }

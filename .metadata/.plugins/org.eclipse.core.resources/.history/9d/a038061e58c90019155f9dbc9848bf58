@@ -1,5 +1,0 @@
-package com.cg.employeemanagement.service;
-
-public interface ProjectService {
-
-}

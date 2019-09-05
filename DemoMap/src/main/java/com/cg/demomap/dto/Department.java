@@ -1,11 +1,6 @@
 package com.cg.demomap.dto;
 
 public class Department<T> {
-	
-	@Override
-	public String toString() {
-		return "Department [deptId=" + deptId + ", deptName=" + deptName + "]";
-	}
 
 	T deptId;
 	String deptName;
@@ -34,4 +29,8 @@ public class Department<T> {
 		this.deptName = deptName;
 	}
 	
+	@Override
+	public String toString() {
+		return "Department [deptId=" + deptId + ", deptName=" + deptName + "]";
+	}
 }
