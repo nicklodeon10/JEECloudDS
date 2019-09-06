@@ -35,10 +35,12 @@
 <fullyQualifiedTypeName name="com.cg.corejava.flowandexception.Exercise3"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="com.cg.democollection.service.EmpIdCompare"/>
-<fullyQualifiedTypeName name="java.util.Map.Entry"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="com.cg.demomap.service.SalaryCompare"/>
 <fullyQualifiedTypeName name="com.cg.demomap.exception.WrongChoiceException"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.cg.demomap.dto.Project"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="com.cg.demomap.exception.EmployeeException"/>
 </qualifiedTypeNameHistroy>

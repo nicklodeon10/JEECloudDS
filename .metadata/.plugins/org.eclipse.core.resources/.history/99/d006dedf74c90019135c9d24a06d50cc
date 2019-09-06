@@ -1,5 +1,0 @@
-package com.cg.demojunit.service;
-
-public class CalculatorServiceImpl {
-
-}

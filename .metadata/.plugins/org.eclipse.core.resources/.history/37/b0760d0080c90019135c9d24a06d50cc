@@ -1,9 +1,0 @@
-import com.cg.junit5demo.service.CalculatorService;
-
-class CalculatorServiceTest {
-
-	CalculatorService service;
-	
-	
-	
-}

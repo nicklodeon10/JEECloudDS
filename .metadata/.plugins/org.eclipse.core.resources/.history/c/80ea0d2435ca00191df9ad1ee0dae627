@@ -1,9 +1,0 @@
-package com.cg.democollection.dto;
-
-public class Employee<T> {
-	
-	T empId;
-	String empName;
-	T empSalary;
-	
-}

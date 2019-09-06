@@ -1,5 +1,0 @@
-package com.cg.junit5demo.service;
-
-public interface Calculator {
-
-}
