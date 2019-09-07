@@ -1,5 +1,0 @@
-package com.cg.democollection.dao;
-
-public class EmployeeDAOImpl {
-
-}

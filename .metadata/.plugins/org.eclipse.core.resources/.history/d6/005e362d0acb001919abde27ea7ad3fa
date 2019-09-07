@@ -1,9 +1,0 @@
-package com.cg.democollection.dao;
-
-import com.cg.democollection.dto.Employee;
-
-public interface EmployeeDAO {
-	
-	public Employee<Integer, Double> addEmployee(Employee<Integer, Double> emp);
-	
-}

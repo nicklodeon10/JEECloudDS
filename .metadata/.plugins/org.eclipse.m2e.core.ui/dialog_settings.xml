@@ -53,6 +53,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.cg.demoserialization"/>
 			<item value="com.cg.demomap"/>
 			<item value="com.cg.democollection"/>
 			<item value="com.cg.junit5demo"/>
@@ -64,6 +65,7 @@
 			<item value="Employee Management"/>
 		</list>
 		<list key="artifactId">
+			<item value="DemoSerialization"/>
 			<item value="DemoMap"/>
 			<item value="DemoCollection"/>
 			<item value="JUnit5Demo"/>

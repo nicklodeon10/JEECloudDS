@@ -43,4 +43,10 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="com.cg.demomap.exception.EmployeeException"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
 </qualifiedTypeNameHistroy>

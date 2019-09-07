@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <syncparticipants>
-<participant displayName="Git (Practice, Practice)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1566981983619">
+<participant displayName="Git (FlightReservationSystem)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1567837464977">
 <data forceFetch="false" root="false">
-<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="Practice, Practice" startupAction="none">&#x0A;<org.eclipse.team.ui.MODEL_PARTICIPANT_REFRESH_SCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
-<org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS modelProviderId="org.eclipse.jdt.ui.modelProvider">&#x0A;<mappings>&#x0A;<resources resourcePath="/Practice" resourceType="4"/>
-</mappings>
-</org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS>
-<org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS modelProviderId="org.eclipse.core.resources.modelProvider">&#x0A;<mappings>&#x0A;<resources resourcePath="/Practice" resourceType="4"/>
+<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="FlightReservationSystem" startupAction="none">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_REFRESH_SCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
+<org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS modelProviderId="org.eclipse.core.resources.modelProvider">
+<mappings>
+<resources resourcePath="/FlightReservationSystem" resourceType="4"/>
 </mappings>
 </org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS>
 </org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS>
-<gitSynchronizeData container="D:/Repository/Practice" dstRev="HEAD" inludeLocal="true" srcRev="HEAD">&#x0A;<includedPaths>&#x0A;<path path="D:/Repository/Practice"/>
-</includedPaths>
-</gitSynchronizeData>
+<gitSynchronizeData container="D:/JEECloudDS/DemoSerialization" dstRev="refs/remotes/origin/master" inludeLocal="true" srcRev="HEAD"/>
 </data>
 </participant>
 </syncparticipants>

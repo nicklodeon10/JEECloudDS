@@ -1,9 +1,0 @@
-package com.cg.corejava.arrays;
-
-public class Exercise2 {
-
-	public String[] getSortedStringWithCaseMod(String ar[]) {
-		
-	}
-	
-}
