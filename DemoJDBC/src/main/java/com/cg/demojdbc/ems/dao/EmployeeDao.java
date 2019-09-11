@@ -65,7 +65,6 @@ public class EmployeeDao implements IEmployeeDao {
 				}
 			}
 		}
-		ps.execute
 		return employee;
 	}
 
