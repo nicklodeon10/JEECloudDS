@@ -1,7 +1,0 @@
-package com.cg.corejava.flowandexception;
-
-public class WrongNameException extends Exception{
-	public WrongNameException(String s) {
-		super(s);
-	}
-}

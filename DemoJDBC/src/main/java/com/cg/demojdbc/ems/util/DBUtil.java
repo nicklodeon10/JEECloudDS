@@ -13,6 +13,7 @@ import com.cg.demojdbc.ems.exception.MyException;
 public class DBUtil {
 	private static Logger myLogger;
 	private static Connection connection;
+	
 	static {
 		Properties props = System.getProperties();
 		String userDir = props.getProperty("user.dir") + "/src/main/resources/";
