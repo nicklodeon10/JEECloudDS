@@ -29,7 +29,7 @@ public class LibraryDaoImpl implements LibraryDao {
 		Properties props=System.getProperties();
 		String userDir=props.getProperty("user.dir")+"/src/main/resources/";
 		PropertyConfigurator.configure(userDir+"/log4j.properties");
-		myLogger=Logger.getLogger("DBUtil.class");
+		myLogger=Logger.getLogger("LibraryDao.class");
 		myLogger.info("Current Working directory is "+userDir);
 		try {
 			connection=DBUtil.getConnection();

@@ -38,7 +38,7 @@ public class EmployeeDao implements IEmployeeDao {
 		String userDir = props.getProperty("user.dir") + "/src/main/resources/";
 		System.out.println("Current working directory is " + userDir);
 		PropertyConfigurator.configure(userDir + "log4j.properties");
-		myLogger = Logger.getLogger("DBUtil.class");
+		myLogger = Logger.getLogger("EmployeeDao.class");
 	}
 	
 	static {
