@@ -17,7 +17,7 @@ public class MyApplication {
 		
 		Scanner scn=new Scanner(System.in);
 		EmployeeService service=new EmployeeServiceImpl();
-		int choice=1;
+		int choice;
 		do {
 			System.out.println("Enter your choice:\n1 for Add\n2 for Show\n3 to Exit.");
 			choice=scn.nextInt();

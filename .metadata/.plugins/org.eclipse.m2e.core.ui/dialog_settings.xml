@@ -53,6 +53,8 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.cg.jdbc"/>
+			<item value="com.cg"/>
 			<item value="com.cg.demojdbc"/>
 			<item value="com.cg.flightreservationsystem"/>
 			<item value="com.cg.demoserialization"/>
@@ -67,6 +69,7 @@
 			<item value="Employee Management"/>
 		</list>
 		<list key="artifactId">
+			<item value="JDBCLabBook"/>
 			<item value="DemoJDBC"/>
 			<item value="FlightReservationSystem"/>
 			<item value="DemoSerialization"/>

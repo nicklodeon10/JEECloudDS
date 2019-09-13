@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.cg.employeemanagement.dto.Department"/>
-<fullyQualifiedTypeName name="com.cg.employeemanagement.dto.Employee"/>
-<fullyQualifiedTypeName name="com.cg.junitlearn.MathUtils"/>
-<fullyQualifiedTypeName name="com.cg.employeemanagement.service.ProjectServiceImpl"/>
-<fullyQualifiedTypeName name="org.junit.Before"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
-<fullyQualifiedTypeName name="org.junit.After"/>
-<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
-<fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
-<fullyQualifiedTypeName name="com.cg.junit5demo.service.CalculatorServiceImpl"/>
 <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
 <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
 <fullyQualifiedTypeName name="com.cg.employeemanagement.service.EmployeeServiceImpl"/>
@@ -28,7 +18,6 @@
 <fullyQualifiedTypeName name="com.cg.democollection.dao.EmployeeDAO"/>
 <fullyQualifiedTypeName name="com.cg.democollection.service.EmployeeService"/>
 <fullyQualifiedTypeName name="com.cg.corejava.operators.Exercise1"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.cg.corejava.flowandexception.Exercise1"/>
 <fullyQualifiedTypeName name="com.cg.corejava.flowandexception.Exercise2"/>
 <fullyQualifiedTypeName name="com.cg.corejava.flowandexception.Exercise3"/>
@@ -47,17 +36,28 @@
 <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="com.cg.demojdbc.ems.util.DBUtil"/>
 <fullyQualifiedTypeName name="com.cg.demojdbc.ems.exception.MyException"/>
 <fullyQualifiedTypeName name="com.cg.demojdbc.ems.exception.EmployeeException"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="com.cg.demojdbc.ems.dao.IEmployeeDao"/>
 <fullyQualifiedTypeName name="com.cg.demojdbc.ems.dao.EmployeeDao"/>
 <fullyQualifiedTypeName name="com.cg.demojdbc.ems.model.Employee"/>
 <fullyQualifiedTypeName name="java.math.BigDecimal"/>
-<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="org.apache.log4j.PropertyConfigurator"/>
+<fullyQualifiedTypeName name="com.cg.jdbc.util.DBUtil"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.cg.jdbc.dto.Author"/>
+<fullyQualifiedTypeName name="com.cg.jdbc.service.AuthorService"/>
+<fullyQualifiedTypeName name="com.cg.jdbc.service.AuthorServiceImpl"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="java.math.BigInteger"/>
+<fullyQualifiedTypeName name="com.cg.jdbc.dto.Book"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

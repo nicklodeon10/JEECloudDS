@@ -1,0 +1,5 @@
+projectKey=com.cg.democollection:DemoCollection
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/com.cg.democollection:DemoCollection
+ceTaskId=AW0pYuuN_gzXuTX1vYu_
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AW0pYuuN_gzXuTX1vYu_

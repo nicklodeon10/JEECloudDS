@@ -1,9 +1,0 @@
-package com.cg.demomap.dao;
-
-import com.cg.demomap.dto.Project;
-
-public interface ProjectDao {
-
-	public Project<Integer, Double> addProject(Project<Integer, Double>);
-	
-}
