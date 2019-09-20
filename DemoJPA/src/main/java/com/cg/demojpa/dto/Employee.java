@@ -9,7 +9,10 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -27,34 +30,47 @@ public class Employee {
 	@Id
 	@Column(name = "emp_id")
 	private Integer empId;
-	@Column(name="emp_name")
+	@Column(name = "emp_name")
 	private String empName;
-	@Column(name="emp_salary")
+	@Column(name = "emp_salary")
 	private Double empSalary;
-	@Column(name="joining_date")
+	@Column(name = "joining_date")
 	@Temporal(TemporalType.DATE)
 	private Date dateOfJoining;
 	@Embedded
 	private Address address;
-	@OneToOne(cascade=CascadeType.ALL)
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private Project project;
-	
-	public Employee() {	}
+	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JoinColumn(name="dep_id")
+	private Department department;
+
+	public Employee() {
+	}
 
 	public Employee(Integer empId, String empName, Double empSalary, Date dateOfJoining, Address address,
-			Project project) {
+			Project project, Department department) {
 		this.empId = empId;
 		this.empName = empName;
 		this.empSalary = empSalary;
 		this.dateOfJoining = dateOfJoining;
 		this.address = address;
 		this.project = project;
+		this.department = department;
 	}
 
 	@Override
 	public String toString() {
 		return "Employee [empId=" + empId + ", empName=" + empName + ", empSalary=" + empSalary + ", dateOfJoining="
-				+ dateOfJoining + ", address=" + address + ", project=" + project + "]";
+				+ dateOfJoining + ", address=" + address + ", project=" + project + ", department=" + department + "]";
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
 	}
 
 	public Integer getEmpId() {

@@ -9,6 +9,7 @@
 		<!-- Entity classes -->
 		<class>com.cg.demojpa.dto.Employee</class>
 		<class>com.cg.demojpa.dto.Project</class>
+		<class>com.cg.demojpa.dto.Department</class>
 
 		<properties>
 			<!-- The JDBC driver of your database -->

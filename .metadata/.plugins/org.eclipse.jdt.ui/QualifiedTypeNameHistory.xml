@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.cg.democollection.dto.Employee"/>
-    <fullyQualifiedTypeName name="com.cg.democollection.dao.EmployeeDAOImpl"/>
-    <fullyQualifiedTypeName name="com.cg.democollection.dao.EmployeeDAO"/>
-    <fullyQualifiedTypeName name="com.cg.democollection.service.EmployeeService"/>
-    <fullyQualifiedTypeName name="com.cg.corejava.operators.Exercise1"/>
-    <fullyQualifiedTypeName name="com.cg.corejava.flowandexception.Exercise1"/>
-    <fullyQualifiedTypeName name="com.cg.corejava.flowandexception.Exercise2"/>
     <fullyQualifiedTypeName name="com.cg.corejava.flowandexception.Exercise3"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="com.cg.democollection.service.EmpIdCompare"/>
@@ -46,10 +39,6 @@
     <fullyQualifiedTypeName name="java.math.BigInteger"/>
     <fullyQualifiedTypeName name="com.cg.jdbc.dto.Book"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
-    <fullyQualifiedTypeName name="javax.persistence.Id"/>
-    <fullyQualifiedTypeName name="javax.persistence.Table"/>
-    <fullyQualifiedTypeName name="javax.persistence.Column"/>
     <fullyQualifiedTypeName name="com.cg.demojpa.dao.EmployeeDao"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
     <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
@@ -59,5 +48,16 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="javax.persistence.Query"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="javax.persistence.Embedded"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
 </qualifiedTypeNameHistroy>
