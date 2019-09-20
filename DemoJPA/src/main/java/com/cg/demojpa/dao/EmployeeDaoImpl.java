@@ -18,6 +18,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		EntityManager em = entityFactory.createEntityManager();
 		EntityTransaction tran = em.getTransaction();
 		tran.begin();
+		//em.persist(emp.getProject());
 		em.persist(emp);
 		//em.flush();
 		tran.commit(); 
