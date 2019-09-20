@@ -101,8 +101,9 @@ public class EmployeeMain {
 		Employee e2=new Employee(222, "Employee2", 222.222, Date.from(localDate.atStartOfDay(defaultZoneId).toInstant()), address, project2, department);
 		Employee e3=new Employee(333, "Employee3", 333.333, Date.from(localDate.atStartOfDay(defaultZoneId).toInstant()), address, project3, department);
 		service.addEmployee(e1);
-		service.addEmployee(e2);
-		service.addEmployee(e3);
+		//service.addEmployee(e2);
+		//service.addEmployee(e3);
+		System.out.println("Done.");
 	}
 
 }
