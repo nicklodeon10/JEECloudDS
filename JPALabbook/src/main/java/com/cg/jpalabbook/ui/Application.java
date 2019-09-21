@@ -1,6 +1,8 @@
 package com.cg.jpalabbook.ui;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import com.cg.jpalabbook.dto.Author;
@@ -76,13 +78,38 @@ public class Application {
 					System.out.print(authorService.remove(authorId));
 					break;
 				}case 5:{
+					System.out.println("Enter Book ISBN: ");
+					BigInteger ISBN=scanner.nextBigInteger();
+					scanner.nextLine();
 					System.out.print("Enter Book Title: ");
 					String title=scanner.nextLine();
 					System.out.print("Enter Book Price: ");
 					Double price=scanner.nextDouble();
+					System.out.println("Enter the Number of Authors: ");
+					Integer authorCount=scanner.nextInt();
+					List<Author> authorList=new ArrayList<Author>();
+					for(int i=0; i<authorCount; i++) {
+						System.out.println("Enter Author Details: ");
+						System.out.print("Enter First Name: ");
+						String fName=scanner.next();
+						System.out.print("Enter Middle Name: ");
+						String mName=scanner.next();
+						System.out.print("Enter Last Name: ");
+						String lName=scanner.next();
+						System.out.print("Enter Phone Number: ");
+						BigInteger phone=scanner.nextBigInteger();
+						Author author=new Author();
+						author.setFirstName(fName);
+						author.setMiddleName(mName);
+						author.setLastName(lName);
+						author.setPhoneNumber(phone);
+						authorList.add(author);
+					}
 					Book book=new Book();
+					book.setISBN(ISBN);
 					book.setTitle(title);
 					book.setPrice(price);
+					book.setAuthorList(authorList);
 					bookService.save(book);
 					break;
 				}case 6:{

@@ -1,17 +1,24 @@
 package com.cg.jpalabbook.dto;
 
 import java.math.BigInteger;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="Author")
 public class Author {
 
-	@Id  @GeneratedValue(strategy=GenerationType.AUTO)
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column
 	private Integer authorId;
 	@Column
@@ -22,24 +29,36 @@ public class Author {
 	private String lastName;
 	@Column
 	private BigInteger phoneNumber;
+	@ManyToMany
+	@JoinTable(joinColumns= {@JoinColumn(name="author_Id")}, inverseJoinColumns= { @JoinColumn(name="ISBN")})
+	private List<Book> bookList;
 
 	public Author() {
 		super();
 	}
 
-	public Author(Integer authorId, String firstName, String middleName, String lastName, BigInteger phoneNumber) {
-		super();
-		this.authorId = authorId;
-		this.firstName = firstName;
-		this.middleName = middleName;
-		this.lastName = lastName;
-		this.phoneNumber = phoneNumber;
+	public List<Book> getBookList() {
+		return bookList;
+	}
+
+	public void setBookList(List<Book> bookList) {
+		this.bookList = bookList;
 	}
 
 	@Override
 	public String toString() {
 		return "Author [authorId=" + authorId + ", firstName=" + firstName + ", middleName=" + middleName
-				+ ", lastName=" + lastName + ", phoneNumber=" + phoneNumber + "]";
+				+ ", lastName=" + lastName + ", phoneNumber=" + phoneNumber + ", bookList=" + bookList + "]";
+	}
+
+	public Author(Integer authorId, String firstName, String middleName, String lastName, BigInteger phoneNumber,
+			List<Book> bookList) {
+		this.authorId = authorId;
+		this.firstName = firstName;
+		this.middleName = middleName;
+		this.lastName = lastName;
+		this.phoneNumber = phoneNumber;
+		this.bookList = bookList;
 	}
 
 	public Integer getAuthorId() {

@@ -8,6 +8,7 @@
 
 		<!-- Entity classes -->
 		<class>com.cg.jpalabbook.dto.Author</class>
+		<class>com.cg.jpalabbook.dto.Book</class>
 
 		<properties>
 			<!-- The JDBC driver of your database -->
@@ -21,7 +22,7 @@
 			<!-- The database password -->
 			<property name="javax.persistence.jdbc.password"
 				value="1234" />
-			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.hbm2ddl.auto" value="create" />
 			<property name="hibernate.show_sql" value="true" />
 		</properties>
 	</persistence-unit>

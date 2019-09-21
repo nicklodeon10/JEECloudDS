@@ -5,13 +5,12 @@ import java.math.BigInteger;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
 
 import com.cg.jpalabbook.dto.Book;
 
 public class BookDaoImpl implements BookDao {
 
-	EntityManagerFactory emf=Persistence.createEntityManagerFactory("jdbclabbook");
+	EntityManagerFactory emf=EntityManagerFactoryUtil.getEntityManagerFactory();
 	EntityManager em=emf.createEntityManager();
 	EntityTransaction transaction=em.getTransaction();
 	
@@ -22,8 +21,8 @@ public class BookDaoImpl implements BookDao {
 		return book;
 	}
 
-	public Book find(BigInteger ISBN) {
-		return em.find(Book.class, ISBN);
+	public Book find(BigInteger iSBN) {
+		return em.find(Book.class, iSBN);
 	}
 
 	public Book update(Book updatedBook) {

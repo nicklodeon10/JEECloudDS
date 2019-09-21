@@ -3,13 +3,12 @@ package com.cg.jpalabbook.dao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
 
 import com.cg.jpalabbook.dto.Author;
 
 public class AuthorDaoImpl implements AuthorDao{
 
-	EntityManagerFactory emf=Persistence.createEntityManagerFactory("jdbclabbook");
+	EntityManagerFactory emf=EntityManagerFactoryUtil.getEntityManagerFactory();
 	EntityManager em=emf.createEntityManager();
 	EntityTransaction transaction=em.getTransaction();
 	
