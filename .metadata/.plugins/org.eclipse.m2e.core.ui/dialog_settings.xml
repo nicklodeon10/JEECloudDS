@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\JEECloudDS\SpringCore2\src\main\java\com\cg\springcore\ui\MyMainApplication.java"/>
 			<item value="D:\JEECloudDS\.metadata\.plugins\org.eclipse.jdt.core\653055787.index"/>
 			<item value="D:\JEECloudDS\DemoCollection"/>
 			<item value="D:\JavaPractice\Practice"/>
@@ -54,6 +55,9 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.cg.springlab"/>
+			<item value="com.cg.springcore"/>
+			<item value="com.cg."/>
 			<item value="com.cg.demojpa"/>
 			<item value="com.cg.jdbc"/>
 			<item value="com.cg"/>
@@ -71,6 +75,8 @@
 			<item value="Employee Management"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringLab"/>
+			<item value="SpringCore"/>
 			<item value="DemoJPA"/>
 			<item value="JDBCLabBook"/>
 			<item value="DemoJDBC"/>

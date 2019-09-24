@@ -119,7 +119,7 @@
 		<item key="DIALOG_X_ORIGIN" value="550"/>
 		<item key="DIALOG_Y_ORIGIN" value="162"/>
 		<item key="DIALOG_WIDTH" value="500"/>
-		<item key="DIALOG_HEIGHT" value="402"/>
+		<item key="DIALOG_HEIGHT" value="419"/>
 		<item key="TOGGLE_SELECTED" value="false"/>
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">
