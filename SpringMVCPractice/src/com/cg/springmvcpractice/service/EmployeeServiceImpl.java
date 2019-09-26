@@ -24,4 +24,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employeeDao.showEmployee();
 	}
 
+	@Override
+	public Employee findEmployee(Integer empId) {
+		return employeeDao.findEmployee(empId);
+	}
+
 }

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.cg.springmvcdemo.dto.Product;
@@ -38,5 +39,16 @@ public class ProductController {
 	public ModelAndView getAllData() {
 		List<Product> prodList=prodService.showProduct();
 		return new ModelAndView("ShowProduct", "productData", prodList);
+	}
+	
+	@RequestMapping(value="/delete", method=RequestMethod.GET)
+	public String deletePage() {
+		return "DeleteProduct";
+	}
+	
+	@RequestMapping(value="/deleteData", method=RequestMethod.POST)
+	public String deleteData(@RequestParam("pid")Integer prodId) {
+		prodService.removeProduct(prodId);
+		return "redirect:/showAll";
 	}
 }

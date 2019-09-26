@@ -10,4 +10,6 @@ public interface EmployeeService {
 	
 	public List<Employee> showEmployee();
 	
+	public Employee findEmployee(Integer empId);
+	
 }

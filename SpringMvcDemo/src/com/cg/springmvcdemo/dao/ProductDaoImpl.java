@@ -32,4 +32,13 @@ public class ProductDaoImpl implements ProductDao{
 		}return null;
 	}
 
+	@Override
+	public void removeProduct(int prodId) {
+		for(Product product: prodList) {
+			if(product.getProdId()==prodId) {
+				prodList.remove(product);
+			}
+		}
+	}
+
 }

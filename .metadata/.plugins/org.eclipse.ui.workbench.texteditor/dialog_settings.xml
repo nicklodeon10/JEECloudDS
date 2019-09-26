@@ -8,6 +8,9 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="pagesub"/>
+			<item value="AddProduct"/>
+			<item value="pagesubmit"/>
 			<item value="pro"/>
 			<item value="iSBN"/>
 			<item value="Person"/>

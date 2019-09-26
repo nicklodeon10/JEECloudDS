@@ -23,4 +23,14 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		return empList;
 	}
 
+	@Override
+	public Employee findEmployee(Integer empId) {
+		for(Employee employee: empList) {
+			if(employee.getEmpId()==empId) {
+				return employee;
+			}
+		}
+		return null;
+	}
+
 }

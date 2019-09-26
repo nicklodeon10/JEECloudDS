@@ -29,4 +29,9 @@ public class ProductServiceImpl implements ProductService {
 		return productDao.findByProductId(prodId);
 	}
 
+	@Override
+	public void removeProduct(int prodId) {
+		productDao.removeProduct(prodId);
+	}
+
 }

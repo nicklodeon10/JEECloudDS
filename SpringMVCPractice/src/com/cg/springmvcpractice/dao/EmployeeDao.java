@@ -10,4 +10,6 @@ public interface EmployeeDao {
 	
 	public List<Employee> showEmployee();
 	
+	public Employee findEmployee(Integer empId);
+	
 }

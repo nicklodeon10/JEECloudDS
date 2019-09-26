@@ -9,5 +9,6 @@
 <body>
 	<a href="addEmployee" >Add a Employee</a>
 	<a href="showEmployee" >Show all Employees</a>
+	<a href="searchEmployee" >Search an Employee</a>
 </body>
 </html>
