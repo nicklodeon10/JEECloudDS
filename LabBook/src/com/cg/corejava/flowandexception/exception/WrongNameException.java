@@ -1,4 +1,4 @@
-package com.cg.corejava.flowandexception;
+package com.cg.corejava.flowandexception.exception;
 
 public class WrongNameException extends Exception{
 	/**

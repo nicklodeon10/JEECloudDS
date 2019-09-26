@@ -1,6 +1,10 @@
 package com.cg.corejava.ui;
 
+import java.util.Scanner;
+
 import com.cg.corejava.flowandexception.Exercise3;
+import com.cg.corejava.flowandexception.Exercise6;
+import com.cg.corejava.flowandexception.exception.EmployeeException;
 
 public class MyApplication {
 
@@ -27,6 +31,16 @@ public class MyApplication {
 		 * System.out.println(new Exercise2().getNthFibonacciRec(10));
 		 */
 		new Exercise3().printPrimes(20);
+		
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter Salary: ");
+		Integer salary=scanner.nextInt();
+		try {
+			new Exercise6().verifySalary(salary);
+		} catch (EmployeeException e) {
+			System.err.println(e.getMessage());
+		}
+		scanner.close();
 	}
 
 }
