@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Employee Management System</title>
+<title>Response Submitted</title>
 </head>
 <body>
-	<a href="addEmployee" >Add a Employee</a>
-	<a href="showEmployee" >Show all Employees</a>
+	Your response has been submitted.<br>
+	<a href="home">Back to Home.</a>
 </body>
 </html>

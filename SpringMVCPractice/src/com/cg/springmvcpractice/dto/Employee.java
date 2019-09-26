@@ -1,5 +1,8 @@
 package com.cg.springmvcpractice.dto;
 
+import org.springframework.stereotype.Component;
+
+@Component("employee")
 public class Employee {
 
 	private Integer empId;
