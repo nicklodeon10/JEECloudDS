@@ -1,11 +1,11 @@
-package com.cg.mvcjpalab.dao;
+package com.cg.springmvcjpalab.service;
 
 import java.util.List;
 
-import com.cg.mvcjpalab.dto.Trainee;
+import com.cg.springmvcjpalab.dto.Trainee;
 
-public interface TraineeDao {
-	
+public interface TraineeService {
+
 	public Trainee add(Trainee trainee);
 	
 	public boolean remove(Integer traineeId);

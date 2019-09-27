@@ -1,4 +1,4 @@
-package com.cg.mvcjpalab.dao;
+package com.cg.springmvcjpalab.dao;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import javax.persistence.TypedQuery;
 
 import org.springframework.stereotype.Repository;
 
-import com.cg.mvcjpalab.dto.Trainee;
+import com.cg.springmvcjpalab.dto.Trainee;
 
 @Repository("traineeDao")
 public class TraineeDaoImpl implements TraineeDao {

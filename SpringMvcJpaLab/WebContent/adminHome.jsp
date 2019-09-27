@@ -13,19 +13,19 @@
 		<td>Pick your Operation.</td>
 	</tr>
 	<tr>
-		<td><a href="#">Add a Trainee</a></td>
+		<td><a href="addTrainee">Add a Trainee</a></td>
 	</tr>
 	<tr>
-		<td><a href="#">Delete a Trainee</a></td>
+		<td><a href="deleteTrainee">Delete a Trainee</a></td>
 	</tr>
 	<tr>
 		<td><a href="#">Modify a Trainee</a></td>
 	</tr>
 	<tr>
-		<td><a href="#">Retrieve a Trainee</a></td>
+		<td><a href="retrieveTrainee">Retrieve a Trainee</a></td>
 	</tr>
 	<tr>
-		<td><a href="#">Retrieve all Trainees</a></td>
+		<td><a href="retrieveAll">Retrieve all Trainees</a></td>
 	</tr>
 </table>
 </body>

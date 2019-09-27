@@ -8,6 +8,5 @@
 </head>
 <body>
 	<h2>Invalid Login Credentials.</h2>
-	<a href="adminHome">Go Back</a>
 </body>
 </html>

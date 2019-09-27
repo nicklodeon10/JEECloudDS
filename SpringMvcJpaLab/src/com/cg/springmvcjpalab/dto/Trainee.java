@@ -1,4 +1,4 @@
-package com.cg.mvcjpalab.dto;
+package com.cg.springmvcjpalab.dto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
