@@ -41,10 +41,15 @@ public class EmployeeController {
 		return new ModelAndView("viewEmployee","employeeData",employeeService.showEmployee());
 	}
 	
-	@RequestMapping(value="/searchEmployee", method=RequestMethod.GET)
+	@RequestMapping(value="/viewEmployee", method=RequestMethod.GET)
 	public ModelAndView findEmployee(@RequestParam("searchId")Integer empId) {
 		List<Employee> empList=new ArrayList<>();
 		empList.add(employeeService.findEmployee(empId));
 		return new ModelAndView("SearchEmployee","employeeData", empList);
+	}
+	
+	@RequestMapping(value="/searchEmployee", method=RequestMethod.GET)
+	public String searchPage() {
+		return "SearchEmployee";
 	}
 }

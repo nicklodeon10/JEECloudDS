@@ -11,7 +11,6 @@
 	<br><a href="addPage">Add Product</a>
 	<br><a href="showAll">Show Product</a>
 	<br><a href="delete">Delete Product</a>
-	<br><a href="searchPage">Search Product</a>
-	<br><a href="updatePage">Update Product</a>
+	<br><a href="search">Search Product</a>
 </body>
 </html>
