@@ -19,7 +19,7 @@
 		<td><a href="deleteTrainee">Delete a Trainee</a></td>
 	</tr>
 	<tr>
-		<td><a href="#">Modify a Trainee</a></td>
+		<td><a href="modifyTrainee">Modify a Trainee</a></td>
 	</tr>
 	<tr>
 		<td><a href="retrieveTrainee">Retrieve a Trainee</a></td>

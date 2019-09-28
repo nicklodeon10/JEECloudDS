@@ -15,7 +15,9 @@ import com.cg.springmvcjpalab.service.TraineeService;
 public class TraineeController {
 
 	@Autowired
-	TraineeService traineeService;
+	TraineeService traineeService;	
+	
+	static Integer traineeId;
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String loginPage() {
@@ -50,12 +52,14 @@ public class TraineeController {
 
 	@RequestMapping(value = "/traineeViewDelete", method = RequestMethod.GET)
 	public ModelAndView deleteShowTrainee(@RequestParam("deleteId") Integer traineeId) {
+		TraineeController.traineeId=traineeId;
 		return new ModelAndView("deleteTrainee","trainee", traineeService.view(traineeId));
 	}
 
 	@RequestMapping(value = "/traineeDelete", method = RequestMethod.POST)
-	public String traineeDelete(@RequestParam("deleteId") Integer traineeId) {
+	public String traineeDelete() {
 		traineeService.remove(traineeId);
+		traineeId=null;
 		return "adminHome";
 	}
 
@@ -64,7 +68,7 @@ public class TraineeController {
 		return "retrieveTrainee";
 	}
 
-	@RequestMapping(value = "traineeRetrieve", method = RequestMethod.POST)
+	@RequestMapping(value = "/traineeRetrieve", method = RequestMethod.POST)
 	public ModelAndView traineeRetrieve(@RequestParam("retrieveId") Integer traineeId) {
 		return new ModelAndView("retrieveTrainee", "trainee", traineeService.view(traineeId));
 	}
@@ -73,5 +77,20 @@ public class TraineeController {
 	public ModelAndView retrieveAllTrainee() {
 		return new ModelAndView("retrieveAll", "traineeData", traineeService.viewAll());
 	}
-
+	
+	@RequestMapping(value="/modifyTrainee", method= RequestMethod.GET)
+	public String viewModifyPage(@ModelAttribute("trainee") Trainee trainee) {
+		return "modifyTrainee";
+	}
+	
+	@RequestMapping(value="/traineeViewModify", method=RequestMethod.GET)
+	public ModelAndView viewModifyDetails(@RequestParam("modifyId")Integer traineeId, @ModelAttribute("trainee") Trainee trainee) {
+		return new ModelAndView("modifyTrainee","traineeData", traineeService.view(traineeId));
+	}
+	
+	@RequestMapping(value="/traineeModify", method=RequestMethod.POST)
+	public String modifyTrainee(@ModelAttribute("trainee") Trainee trainee) {
+		traineeService.update(trainee);
+		return "adminHome";
+	}
 }

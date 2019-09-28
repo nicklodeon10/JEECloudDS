@@ -14,7 +14,7 @@
 			<tr>
 				<td>Please enter Trainee Id:</td>
 				<td><input type="text" name="deleteId" /></td>
-				<td><input type="submit" value="Delete Trainee" /></td>
+				<td><input type="submit" value="Delete Trainee">
 			</tr>
 		</table>
 	</form:form>
