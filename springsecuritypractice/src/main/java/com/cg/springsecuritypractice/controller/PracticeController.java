@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.cg.springsecuritypractice;
+package com.cg.springsecuritypractice.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
