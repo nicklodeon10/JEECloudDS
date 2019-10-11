@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=SpringBootDemo/src\/main\/java&lt;com.cg.SpringBootDemo.service{ProductService.java[ProductService" modifiers="513" timestamp="1569933744153"/>
-<typeInfo handle="=SpringBootDemo/src\/main\/java&lt;com.cg.SpringBootDemo.dao{ProductDao.java[ProductDao" modifiers="513" timestamp="1569933510449"/>
+<typeInfo handle="=springsecuritypractice/C:\/Users\/OSIS\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/5.1.6.RELEASE\/spring-security-core-5.1.6.RELEASE.jar&lt;org.springframework.security.provisioning(UserDetailsManager.class[UserDetailsManager" modifiers="1537" timestamp="1570688402921"/>
+<typeInfo handle="=springsecuritypractice/C:\/Users\/OSIS\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/5.1.6.RELEASE\/spring-security-core-5.1.6.RELEASE.jar&lt;org.springframework.security.core.userdetails(UserDetailsService.class[UserDetailsService" modifiers="1537" timestamp="1570688402921"/>
+<typeInfo handle="=springsecuritypractice/C:\/Users\/OSIS\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/5.1.6.RELEASE\/spring-security-core-5.1.6.RELEASE.jar&lt;org.springframework.security.core.userdetails(UserDetails.class[UserDetails" modifiers="1537" timestamp="1570688402921"/>
+<typeInfo handle="=springsecuritypractice/C:\/Program Files\/Java\/jdk1.8.0_221\/jre\/lib\/rt.jar&lt;java.nio.file.attribute(UserDefinedFileAttributeView.class[UserDefinedFileAttributeView" modifiers="1537" timestamp="1568988518320"/>
+<typeInfo handle="=springsecuritypractice/C:\/Users\/OSIS\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.1.11.RELEASE\/spring-data-jpa-2.1.11.RELEASE.jar&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1570256978757"/>
+<typeInfo handle="=springsecuritypractice/C:\/Users\/OSIS\/.m2\/repository\/org\/springframework\/security\/spring-security-web\/5.1.6.RELEASE\/spring-security-web-5.1.6.RELEASE.jar&lt;org.springframework.security.web.authentication(AuthenticationSuccessHandler.class[AuthenticationSuccessHandler" modifiers="1537" timestamp="1570688404124"/>
 </typeInfoHistroy>

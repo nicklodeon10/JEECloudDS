@@ -3,6 +3,7 @@
  */
 package com.cg.springsecuritypractice.controller;
 
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -20,7 +21,8 @@ public class PracticeController {
 	}
 	
 	@GetMapping("/admin")
-	public String adminPage() {
+	public String adminPage(Authentication authentication) {
+		System.out.println(authentication.getName());
 		return "AdminPage";
 	}
 	

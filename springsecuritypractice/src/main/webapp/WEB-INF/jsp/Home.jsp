@@ -8,7 +8,6 @@
 </head>
 <body>
 	<h3>Welcome to Spring Security</h3>
-	<a href="admin">Admin</a><br>
-	<a href="user">User</a><br>
+	<a href="/login">Login</a><br>
 </body>
 </html>
