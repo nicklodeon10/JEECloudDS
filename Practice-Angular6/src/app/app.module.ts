@@ -1,8 +1,11 @@
 ﻿import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
-import {ProductComponent} from './app.productcomponent'
-import {ShowProduct} from './app.showproductcomponent'
+import {AddEmployee} from './app.addemployeecomponent';
+import {ShowEmployee} from './app.showemployeecomponent'
+import {SearchEmployee} from './app.searchemployeecomponent'
+
+
 
 @NgModule({
     imports: [
@@ -10,9 +13,10 @@ import {ShowProduct} from './app.showproductcomponent'
         
     ],
     declarations: [
-        AppComponent, 
-        ProductComponent,
-        ShowProduct
+        AppComponent,
+        AddEmployee,
+        ShowEmployee,
+        SearchEmployee
 		],
     providers: [ ],
     bootstrap: [AppComponent]
