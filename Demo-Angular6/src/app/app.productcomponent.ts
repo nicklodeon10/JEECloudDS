@@ -3,9 +3,18 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'prod',
-    template: `<h4>Add Product</h4><table><tr>
-                <td>Product Id</td>
-                </tr></table>`
+    templateUrl: 'app.add.html'
 })
 
-export class ProductComponent{ }
+export class ProductComponent{ 
+
+    prodId: number= 1001;
+    prodName: string="Mobile";
+    prodOnline: boolean;
+    prodType: any="true";
+    
+    getAllData():any{
+        
+    }
+
+}
