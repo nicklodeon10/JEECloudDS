@@ -1,0 +1,61 @@
+<h4>
+    <img [src]=pic height="45px" />dd Product
+</h4>
+
+<table>
+    <tr>
+        <td>Product ID</td>
+        <td>
+            <input type="text" [(ngModel)]="prodId">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Name</td>
+        <td>
+            <input type="text" [(ngModel)]="prodName">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Availability</td>
+        <td>
+            <input type="text" [(ngModel)]="prodOnline">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Type</td>
+        <td><input type="text" [(ngModel)]="prodType"></td>
+    </tr>
+    <tr>
+        <button type="button" value="Add Data" (click)="getAllData()" >Get Data</button>
+    </tr>
+
+    <br><p>
+    Product Id is {{prodId}}.<br>
+    Product Name is {{prodName}}<br>
+    Product Availability is {{prodOnline}}<br>
+    Product Type is {{prodType}}.
+    </p>
+
+    <div *ngIf="prodOnline else falseblock">Available Online.</div>
+    <ng-template #falseblock> Enter Online Status </ng-template>
+
+    <table border="2px" >
+        <tr>
+            <th>Product Id:</th>
+            <th>Product Name:</th>
+            <th>Product Online:</th>
+            <th>Product Type:</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let product of products;">
+            <td>{{product.prodId}}</td>
+            <td>{{product.prodName}}</td>
+            <td>{{product.prodOnline}}</td>
+            <td>{{product.prodType}}</td>
+            <td>
+                <button type="button" (click)="deleteProduct(index)">Delete</button>
+            </td>
+        </tr>
+    </table>
+
+</table>
