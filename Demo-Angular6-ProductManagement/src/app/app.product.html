@@ -40,7 +40,7 @@
         <td>{{pro.prodName}}</td>
         <td>{{pro.prodPrice}}</td>
         <td>
-            <button type="button" (click)="searchProduct(index)" >Update</button>
+            <button type="button" (click)="searchProduct(pro)" >Update</button>
             <button type="button" (click)="deleteProduct(index)" >Delete</button>
         </td>
     </tr>
@@ -54,19 +54,19 @@
             <tr>
                 <td>Product Id:</td>
                 <td>
-                    <input type="number" [(ngModel)]="uProdId" />
+                    <input type="number" [(ngModel)]="currProduct.prodId" disabled/>
                 </td>
             </tr>
             <tr>
                 <td>Product Name:</td>
                 <td>
-                    <input type="text" [(ngModel)]="uProdName" />
+                    <input type="text" [(ngModel)]="currProduct.prodName" />
                 </td>
             </tr>
             <tr>
                 <td>Product Price:</td>
                 <td>
-                    <input type="number" [(ngModel)]="uProdPrice" />
+                    <input type="number" [(ngModel)]="currProduct.prodPrice" />
                 </td>
             </tr>
             <tr>
