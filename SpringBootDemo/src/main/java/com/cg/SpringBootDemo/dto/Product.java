@@ -1,11 +1,15 @@
 package com.cg.SpringBootDemo.dto;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Product {
 
+	@Id
 	private Integer prodId;
 	private String prodName;
 	private Double prodCost;
-	private String prodDescription;
 
 	public Product() {
 		super();
@@ -15,13 +19,11 @@ public class Product {
 		this.prodId = prodId;
 		this.prodName = prodName;
 		this.prodCost = prodCost;
-		this.prodDescription = prodDescription;
 	}
 
 	@Override
 	public String toString() {
-		return "Product [prodId=" + prodId + ", prodName=" + prodName + ", prodCost=" + prodCost + ", prodDescription="
-				+ prodDescription + "]";
+		return "Product [prodId=" + prodId + ", prodName=" + prodName + ", prodCost=" + prodCost + "]";
 	}
 
 	@Override
@@ -29,7 +31,6 @@ public class Product {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((prodCost == null) ? 0 : prodCost.hashCode());
-		result = prime * result + ((prodDescription == null) ? 0 : prodDescription.hashCode());
 		result = prime * result + ((prodId == null) ? 0 : prodId.hashCode());
 		result = prime * result + ((prodName == null) ? 0 : prodName.hashCode());
 		return result;
@@ -48,11 +49,6 @@ public class Product {
 			if (other.prodCost != null)
 				return false;
 		} else if (!prodCost.equals(other.prodCost))
-			return false;
-		if (prodDescription == null) {
-			if (other.prodDescription != null)
-				return false;
-		} else if (!prodDescription.equals(other.prodDescription))
 			return false;
 		if (prodId == null) {
 			if (other.prodId != null)
@@ -89,14 +85,6 @@ public class Product {
 
 	public void setProdCost(Double prodCost) {
 		this.prodCost = prodCost;
-	}
-
-	public String getProdDescription() {
-		return prodDescription;
-	}
-
-	public void setProdDescription(String prodDescription) {
-		this.prodDescription = prodDescription;
 	}
 
 }

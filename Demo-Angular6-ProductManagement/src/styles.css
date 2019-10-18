@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 body{
-    padding: 50px;
+    padding: 10vw;
+    background-color: lightgray;
 }
 
 hr{

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {ProductService} from './_service/app.productservice';
 
 @Component({
@@ -6,45 +6,14 @@ import {ProductService} from './_service/app.productservice';
     templateUrl: 'app.product.html'
 })
 
-export class ProductComponent {
+export class ProductComponent  {
     
-    prodId:number;
-    prodName:string;
-    prodPrice:number;
-    products:any[]=[];  
-    currProduct:any;
-    currIndex:any;
-    flag:boolean=false;
+    model:any={};
 
-    // constructor(private service:ProductService){
-    //     console.log("Inside the constructor.");
-    // }
-
-    // implements OnInit
-    // ngOnInit(){
-    //     this.service.getAllData().subscribe((data:Product[])=>this.products=data);
-    // }
+    constructor(private service:ProductService){}       
 
     addProduct():any{
-        this.products.push({prodId: this.prodId, prodName: this.prodName, prodPrice: this.prodPrice});
+        this.service.addProduct(this.model).subscribe((data)=>console.log(data));
     }
 
-    searchProduct(product: any):any{
-        this.currProduct={prodId: product.prodId, prodName: product.prodName, prodPrice: product.prodPrice};;
-        this.flag=true;
-    }
-
-    updateProduct(){
-        for(let i=0; i<this.products.length; i++){
-            if(this.products[i].prodId==this.currProduct.prodId){
-                this.products[i]=this.currProduct;
-                break;
-            }
-        }
-        this.flag=false;
-    }
-
-    deleteProduct(index: any):any{
-        this.products.splice(index,1); 
-    }
 }

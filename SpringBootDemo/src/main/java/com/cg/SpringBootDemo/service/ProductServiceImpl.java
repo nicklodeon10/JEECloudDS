@@ -16,22 +16,24 @@ public class ProductServiceImpl implements ProductService {
 	
 	@Override
 	public Product addProduct(Product product) {
-		return productDao.addProduct(product);
+		return productDao.save(product);
 	}
 
 	@Override
 	public List<Product> showAll() {
-		return productDao.showAll();
+		return productDao.findAll();
 	}
 
 	@Override
 	public boolean removeProduct(Integer productId) {
-		return productDao.removeProduct(productId);
+		productDao.deleteById(productId);
+		return true;
 	}
 
 	@Override
 	public boolean updateProduct(Product product) {
-		return productDao.updateProduct(product);
+		productDao.save(product);
+		return true;
 	}
 
 }

@@ -3,19 +3,19 @@
     <tr>
         <td>Product Id:</td>
         <td>
-            <input type="number" [(ngModel)]="prodId" />
+            <input type="number" [(ngModel)]="model.prodId" />
         </td>
     </tr>
     <tr>
         <td>Product Name:</td>
         <td>
-            <input type="text" [(ngModel)]="prodName" />
+            <input type="text" [(ngModel)]="model.prodName" />
         </td>
     </tr>
     <tr>
-        <td>Product Price:</td>
+        <td>Product Cost:</td>
         <td>
-            <input type="number" [(ngModel)]="prodPrice" />
+            <input type="number" [(ngModel)]="model.prodCost" />
         </td>
     </tr>
     <tr>
@@ -24,55 +24,3 @@
         </td>
     </tr>
 </table>
-
-<hr>
-
-<h3>Show Product</h3>
-<table border="2px">
-    <tr>
-        <th>Product Id</th>
-        <th>Product Name</th>
-        <th>Product Cost</th>
-        <th>Actions</th>
-    </tr>
-    <tr *ngFor="let pro of products;">
-        <td>{{pro.prodId}}</td>
-        <td>{{pro.prodName}}</td>
-        <td>{{pro.prodPrice}}</td>
-        <td>
-            <button type="button" (click)="searchProduct(pro)" >Update</button>
-            <button type="button" (click)="deleteProduct(index)" >Delete</button>
-        </td>
-    </tr>
-</table>
-
-<hr>
-
-<div *ngIf="flag">
-    <h3>Update Product</h3>
-        <table>
-            <tr>
-                <td>Product Id:</td>
-                <td>
-                    <input type="number" [(ngModel)]="currProduct.prodId" disabled/>
-                </td>
-            </tr>
-            <tr>
-                <td>Product Name:</td>
-                <td>
-                    <input type="text" [(ngModel)]="currProduct.prodName" />
-                </td>
-            </tr>
-            <tr>
-                <td>Product Price:</td>
-                <td>
-                    <input type="number" [(ngModel)]="currProduct.prodPrice" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="button" value="Update Product" (click)="updateProduct()" />
-               </td>
-           </tr>
-    </table>
-</div>

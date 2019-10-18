@@ -1,0 +1,47 @@
+<h3>Show Product</h3>
+<table border="2px">
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Cost</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor="let pro of products;">
+        <td>{{pro.prodId}}</td>
+        <td>{{pro.prodName}}</td>
+        <td>{{pro.prodCost}}</td>
+        <td>
+            <button type="button" (click)="searchProduct(pro)" >Update</button>
+            <button type="button" (click)="deleteProduct(pro.prodId)" >Delete</button>
+        </td>
+    </tr>
+</table>
+
+<!-- <div *ngIf="flag">
+    <h3>Update Product</h3>
+        <table>
+            <tr>
+                <td>Product Id:</td>
+                <td>
+                    <input type="number" [(ngModel)]="currProduct.prodId" disabled/>
+                </td>
+            </tr>
+            <tr>
+                <td>Product Name:</td>
+                <td>
+                    <input type="text" [(ngModel)]="currProduct.prodName" />
+                </td>
+            </tr>
+            <tr>
+                <td>Product Cost:</td>
+                <td>
+                    <input type="number" [(ngModel)]="currProduct.prodCost" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Update Product" (click)="updateProduct()" />
+               </td>
+           </tr>
+    </table>
+</div> -->      
