@@ -4765,3 +4765,213 @@ java.lang.IllegalArgumentException: Index out of bounds
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 10:08:23.198
 !MESSAGE executing callback sts4.classpath.qHZngFbl SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:54:41.608
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qHZngFbl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:54:41.614
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.qHZngFbl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:54:41.620
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:54:41.626
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qHZngFbl => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:55:46.429
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:55:46.436
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@64126ab4[org.springframework.tooling.boot.ls:1.11.0.201909171347(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:55:46.441
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.347
+!MESSAGE Boot LS startup time from start to initialized: 23900ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.392
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.uHzzSphOisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.399
+!MESSAGE subscribing to classpath changes: sts4.classpath.uHzzSphO isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.405
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.411
+!MESSAGE subsribers = {sts4.classpath.uHzzSphO=Send Classpath Notifications(2289)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.417
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.425
+!MESSAGE project SpringBootDemo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.439
+!MESSAGE Preparing classpath changed notification SpringBootDemo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.444
+!MESSAGE project DemoCollection ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.449
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.454
+!MESSAGE project DemoCollection SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.459
+!MESSAGE project DemoJDBC ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.465
+!MESSAGE classpath=101 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.470
+!MESSAGE project DemoJDBC SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.477
+!MESSAGE buffering callback sts4.classpath.uHzzSphO SpringBootDemo false 101
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.482
+!MESSAGE project DemoJPA ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.487
+!MESSAGE executing callback sts4.classpath.uHzzSphO 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.493
+!MESSAGE project DemoJPA SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.499
+!MESSAGE project DemoJunit ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.511
+!MESSAGE project DemoJunit SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.521
+!MESSAGE project DemoMap ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.534
+!MESSAGE project DemoMap SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.543
+!MESSAGE project DemoSecurity ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.558
+!MESSAGE project DemoSecurity SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.566
+!MESSAGE project DemoSerialization ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.577
+!MESSAGE project DemoSerialization SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.588
+!MESSAGE project EmployeeManagement ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.600
+!MESSAGE project EmployeeManagement SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.605
+!MESSAGE project JDBCLabBook ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.612
+!MESSAGE project JDBCLabBook SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.617
+!MESSAGE project JPALabbook ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.623
+!MESSAGE project JPALabbook SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.628
+!MESSAGE project JUnit5Basics ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.634
+!MESSAGE project JUnit5Basics SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.639
+!MESSAGE project JUnit5Demo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.648
+!MESSAGE project JUnit5Demo SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.654
+!MESSAGE project LabBook ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.663
+!MESSAGE project LabBook SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.669
+!MESSAGE project Servers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.682
+!MESSAGE project Servers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.687
+!MESSAGE project SpringCore ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.693
+!MESSAGE project SpringCore SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.699
+!MESSAGE project SpringCore2 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.704
+!MESSAGE project SpringCore2 SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.712
+!MESSAGE project SpringCoreDemo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.718
+!MESSAGE project SpringCoreDemo SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.724
+!MESSAGE project SpringLab ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.729
+!MESSAGE project SpringLab SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.739
+!MESSAGE project SpringMVCPractice ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.745
+!MESSAGE project SpringMVCPractice SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.749
+!MESSAGE project SpringMvcDemo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.754
+!MESSAGE project SpringMvcDemo SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.759
+!MESSAGE project SpringMvcJpaLab ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.764
+!MESSAGE project SpringMvcJpaLab SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.768
+!MESSAGE project jwtdemo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.773
+!MESSAGE project jwtdemo SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.778
+!MESSAGE project springdata ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.783
+!MESSAGE project springdata SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.787
+!MESSAGE project springsecuritypractice ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.793
+!MESSAGE project springsecuritypractice SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.798
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.802
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.uHzzSphO => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 14:56:10.809
+!MESSAGE executing callback sts4.classpath.uHzzSphO SUCCESS [done]

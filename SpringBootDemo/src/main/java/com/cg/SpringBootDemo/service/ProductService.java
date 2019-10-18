@@ -10,6 +10,8 @@ public interface ProductService {
 	
 	public List<Product> showAll();
 	
+	public Product search(Integer prodId);
+	
 	public boolean removeProduct(Integer productId);
 	
 	public boolean updateProduct(Product product);

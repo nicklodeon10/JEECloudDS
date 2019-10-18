@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ProductService} from './_service/app.productservice';
-import {Product} from './_model/app.product'
+import {Product} from './_model/app.product';
+import {Router} from '@angular/router';
+import { routerNgProbeToken } from '@angular/router/src/router_module';
 
 @Component({
     selector: 'show',
@@ -8,39 +10,24 @@ import {Product} from './_model/app.product'
 })
 
 export class ShowComponent implements OnInit{
-    
-    // prodId:number;
-    // prodName:string;
-    // prodCost:number;
-    // currProduct:any;
-    // currIndex:any;
-    // flag:boolean=false;
+
+    flag:boolean=true;
 
     products:Product[]=[];
 
-    constructor(private service:ProductService){}       
+    constructor(private service:ProductService, private router:Router){}       
 
     ngOnInit(){
         this.service.getAllData().subscribe((data:Product[])=>this.products=data);
     }
 
-    deleteProduct(id: any):any{
-        this.service.deleteProduct(id).subscribe();
+    updateProduct(prodId:number){
+        this.router.navigate(['update',prodId]);
     }
 
-    // searchProduct(product: any):any{
-    //     this.currProduct={prodId: product.prodId, prodName: product.prodName, prodCost: product.prodCost};;
-    //     this.flag=true;
-    // }
-
-    // updateProduct(){
-    //     for(let i=0; i<this.products.length; i++){
-    //         if(this.products[i].prodId==this.currProduct.prodId){
-    //             this.products[i]=this.currProduct;
-    //             break; 
-    //         }
-    //     }
-    //     this.flag=false;
-    // }
+    deleteProduct(id: any):any{
+        this.service.deleteProduct(id).subscribe();
+        location.reload();
+    }
 
 }

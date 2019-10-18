@@ -7,6 +7,8 @@ import {HttpClient} from '@angular/common/http';
 
 export class ProductService{
 
+    temp:any;
+
     //Dependency Injection
     constructor(private myhttp:HttpClient){}
 
@@ -27,8 +29,15 @@ export class ProductService{
     }
 
     deleteProduct(id:number){ 
-        console.log('http://localhost:9088/product/delete?prodId='+id);
         return this.myhttp.delete("http://localhost:9088/product/delete?prodId="+id);
+    }
+
+    searchProduct(id:number){
+        return this.myhttp.get('http://localhost:9088/product/search?prodId='+id);
+    }
+
+    updateProduct(data:any){
+        return this.myhttp.put('http://localhost:9088/product/update',data);
     }
 
 }

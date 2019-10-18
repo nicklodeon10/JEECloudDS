@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -44,8 +45,14 @@ public class ProductController {
 	}
 	
 	@PutMapping("/update")
-	public boolean updateProduct(@ModelAttribute Product product) {
-		System.out.println("Updating product.");
+	public boolean updateProduct(@RequestBody Product product) {
+		System.out.println("Updating product."+product);
 		return productService.updateProduct(product);
+	}
+	
+	@GetMapping("/search")
+	public Product searchProduct(@RequestParam("prodId")Integer productId) {
+		System.out.println("Searching Product. "+productId);
+		return productService.search(productId);
 	}
 }
