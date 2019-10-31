@@ -13,7 +13,7 @@ export class ProductService{
     constructor(private myhttp:HttpClient){}
 
     getAllData(){
-        return this.myhttp.get('http://localhost:9088/product/getAll');
+        return this.myhttp.get('http://13.232.209.240:9088/product/getAll');
     }
 
     addProduct(data:any){
@@ -25,19 +25,19 @@ export class ProductService{
         form.append("prodId", data.prodId);
         form.append("prodName", data.prodName);
         form.append("prodCost", data.prodCost);
-        return this.myhttp.post('http://localhost:9088/product/add', form);
+        return this.myhttp.post('http://13.232.209.240:9088/product/add', form);
     }
 
     deleteProduct(id:number){ 
-        return this.myhttp.delete("http://localhost:9088/product/delete?prodId="+id);
+        return this.myhttp.delete("http://13.232.209.240:9088/product/delete?prodId="+id);
     }
 
     searchProduct(id:number){
-        return this.myhttp.get('http://localhost:9088/product/search?prodId='+id);
+        return this.myhttp.get('http://13.232.209.240:9088/product/search?prodId='+id);
     }
 
     updateProduct(data:any){
-        return this.myhttp.put('http://localhost:9088/product/update',data);
+        return this.myhttp.put('http://13.232.209.240:9088/product/update',data);
     }
 
 }

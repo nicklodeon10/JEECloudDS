@@ -19,7 +19,7 @@ import com.cg.SpringBootDemo.service.ProductService;
 
 @RestController
 @RequestMapping(value="/product")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://13.232.209.240:4200")
 public class ProductController {
 	
 	@Autowired
